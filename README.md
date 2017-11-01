@@ -1,33 +1,31 @@
-# Запуск проекта в Visual Studio 2015
+﻿# Запуск проекта в Visual Studio 2017
 
 ## Необходимые инструменты
 
-1. Visual Studio 2015 with Update 3  
+1. Visual Studio 2017  
+   Версия: 15.4.2  
    Редакции: Community (бесплатная) / Professional / Enterprise  
    Язык: английский  
-   Скачать можно тут: https://www.visualstudio.com/downloads/
-2. .NET Core 1.0.1 - VS 2015 Tooling Preview 2  
-   Скачать можно тут: https://www.microsoft.com/net/download#tools
+   Скачать можно тут: https://www.visualstudio.com/downloads/  
+   Workloads: ASP.NET and web development
 
 ## Запуск проекта
 
-1. Откройте панель Team Explorer (Ctrl + \, Ctrl + M)
-2. Если на данный момент открыт другой репозиторий - нажмите Manage Connections
-3. В разделе Local Git Repositories нажмите Clone
-4. В появившемся окне укажите адрес репозитория, а также путь, куда его необходимо склонировать и нажмите Clone
-5. Откройте склонированный репозиторий в Local Git Repositories
-6. В разделе Solutions выберите нужный солюшен и откройте его
+1. Откройте панель Team Explorer (Ctrl + \, Ctrl + M).
+2. Если на данный момент открыт другой репозиторий - нажмите Manage Connections.
+3. В разделе Local Git Repositories нажмите Clone.
+4. В появившемся окне укажите адрес репозитория, а также путь, куда его необходимо склонировать и нажмите Clone.
+5. После завершения клонирования откроется Solution Explorer - Folder View - в нем необходимо открыть нужный солюшен.
 
 # Запуск проекта в Visual Studio Code
 
 ## Необходимые инструменты
 
 1. Visual Studio Code  
-   Версия: 1.5.3  
-   Скачать можно тут: https://code.visualstudio.com/
-2. .NET Core SDK  
-   Версия: 1.0.0 - Preview 2  
-   Скачать можно тут: https://www.microsoft.com/net/download#core
+   Версия: 1.17.2  
+   Скачать можно тут: https://www.visualstudio.com/downloads/
+2. .NET Core 2.0 SDK  
+   Скачать можно тут: https://www.microsoft.com/net/download/core
 
 ## Запуск проекта
 
@@ -35,9 +33,9 @@
 
 ```
 git clone <Repository Url>
-cd .\Web-Frontend4\src\Frontend4\
+cd .\Web-Frontend4\Frontend4\
 dotnet restore
-cd ..\..
+cd ..
 code .
 ```
 
