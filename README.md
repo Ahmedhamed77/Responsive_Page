@@ -1,55 +1,56 @@
-﻿# Запуск проекта в Visual Studio 2017
+﻿# Launching project in Visual Studio 2017
 
-## Необходимые инструменты
+## Required tools
 
 1. Visual Studio 2017  
-   Версия: 15.4.2  
-   Редакции: Community (бесплатная) / Professional / Enterprise  
-   Язык: английский  
-   Скачать можно тут: https://www.visualstudio.com/downloads/  
-   Workloads: ASP.NET and web development
+   Version: 15.8 or above  
+   Edition: Community (free) / Professional / Enterprise  
+   Language: English  
+   Download link: https://www.visualstudio.com/downloads/
+2. .NET Core 2.1 SDK  
+   Download link: https://www.microsoft.com/net/download
 
-## Запуск проекта
+## Project launch
 
-1. Откройте панель Team Explorer (Ctrl + \, Ctrl + M).
-2. Если на данный момент открыт другой репозиторий - нажмите Manage Connections.
-3. В разделе Local Git Repositories нажмите Clone.
-4. В появившемся окне укажите адрес репозитория, а также путь, куда его необходимо склонировать и нажмите Clone.
-5. После завершения клонирования откроется Solution Explorer - Folder View - в нем необходимо открыть нужный солюшен.
+1. Open **Team Explorer** (Ctrl + \, Ctrl + M).
+2. If another repository is currently active click **Manage Connections**.
+3. In **Local Git Repositories** section click **Clone**.
+4. Enter repository url and target path and click **Clone**.
+5. After cloning repository, Visual Studio will open **Solution Explorer - Folder View**. Double click on the solution (`*.sln`) to access the project.
 
-# Запуск проекта в Visual Studio Code
+# Launching project in Visual Studio Code
 
-## Необходимые инструменты
+## Required tools
 
 1. Visual Studio Code  
-   Версия: 1.17.2  
-   Скачать можно тут: https://www.visualstudio.com/downloads/
-2. .NET Core 2.0 SDK  
-   Скачать можно тут: https://www.microsoft.com/net/download/core
+   Version: 1.27 or above  
+   Download link: https://www.visualstudio.com/downloads/
+2. .NET Core 2.1 SDK  
+   Download link: https://www.microsoft.com/net/download
 
-## Запуск проекта
+## Project launch
 
-Для того, чтобы склонировать и запустить проект нужно выполнить в командной строке следующие команды (Windows):
+To clone and launch project, execute following commands in preferred shell (Command Prompt, PowerShell, bash, etc.):
 
 ```
 git clone <Repository Url>
-cd .\Web-Frontend4\Frontend4\
+cd .\WebInt-Frontend4\Frontend4\
 dotnet restore
 cd ..
 code .
 ```
 
-Для других платформ потребуется изменить формат путей, а так же некоторые инструменты могут быть не добавлены в PATH
+Note: on UNIX systems use `./WebInt-Frontend4/Frontend4` path format.
 
-При первом запуске возможно потребуется установка дополнительных расширений к Visual Studio Code
+On the first launch on Visual Studio Code it could require some additional extensions:
 
 1. C# for Visual Studio Code
-   1. Откройте раздел Extensions (Ctrl+Shift+X)
-   2. В поиске введите: C#
-   3. В появившейся выдаче найдите C# for Visual Studio Code от Microsoft и нажмите Install
-   4. После установки нажмите Enable и перезапустите Visual Studio Code
+   1. Open **Extensions** (Ctrl+Shift+X)
+   2. Type **C#** in search field
+   3. Select **C# for Visual Studio Code** from Microsoft and click **Install**
+   4. After installation, click **Enable** and restart Visual Studio Code
 2. .NET Core Debugger
-   1. Нажмите Ctrl+Shift+P
-   2. Начните набирать: Download .NET Core Debugger
-   3. Как только в автокомплите появится данный пункт - нажмите его
-   4. Для надежности перезапустите Visual Studio Code
+   1. Press Ctrl+Shift+P
+   2. Start typing: **Download .NET Core Debugger**
+   3. After this entry appears in search field - select it
+   4. Restart Visual Studio Code just in case
